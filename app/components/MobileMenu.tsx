@@ -23,6 +23,7 @@ export default function MobileMenu() {
         <div className="mt-5 flex px-2 space-y-1 flex-col">
           {navbarLinks.map((item) => (
             <Link
+              key={item.id}
               href={item.href}
               className={cn(
                 location === item.href
